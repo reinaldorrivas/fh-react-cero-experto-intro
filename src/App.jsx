@@ -1,3 +1,5 @@
-const App = () => <h1>Hola Mundo</h1>;
+import WelcomeMessage from './WelcomeMessage';
+
+const App = () => <WelcomeMessage />;
 
 export default App;
