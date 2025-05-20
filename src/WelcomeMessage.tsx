@@ -1,16 +1,22 @@
 const newMessage = {
-  title: 'René Rivas',
+  autor: 'René Rivas',
   message: '¡Hola Mundo!',
 };
 
 const returnValues = () => {
-  return [newMessage.title, newMessage.message];
+  return [newMessage.autor, newMessage.message];
 };
 
-const WelcomeMessage = () => (
+const WelcomeMessage = ({ title, subtitle }) => (
   <>
-    <h1>{returnValues()[0]}</h1>
-    <p>{returnValues()[1]}</p>
+    <header>
+      <h1>{title}</h1>
+      <small>{subtitle}</small>
+    </header>
+    <main>
+      <p>{returnValues()[0]}</p>
+      <p>{returnValues()[1]}</p>
+    </main>
   </>
 );
 
