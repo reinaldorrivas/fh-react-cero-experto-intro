@@ -8,18 +8,13 @@ const returnValues = () => {
 };
 
 const WelcomeMessage = ({ title, subtitle }) => {
-
   return (
-    <>
-      <header>
-        <h1>{title}</h1>
-        <small>{subtitle}</small>
-      </header>
-      <main>
-        <p>{returnValues()[0]}</p>
-        <p>{returnValues()[1]}</p>
-      </main>
-    </>
+    <header>
+      <h1>{title}</h1>
+      <p>{subtitle}</p>
+      <p>{returnValues()[0]}</p>
+      <p>{returnValues()[1]}</p>
+    </header>
   );
 };
 
